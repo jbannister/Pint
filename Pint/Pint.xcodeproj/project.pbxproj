@@ -17,6 +17,7 @@
 		4CBDF63E2BA75AD600F2885F /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CBDF63D2BA75AD600F2885F /* MapView.swift */; };
 		4CBDF6412BA75B1400F2885F /* CombinedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CBDF6402BA75B1400F2885F /* CombinedView.swift */; };
 		4CBDF6442BA75B4900F2885F /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CBDF6432BA75B4900F2885F /* SettingsView.swift */; };
+		4CBDF6462BA838CD00F2885F /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CBDF6452BA838CD00F2885F /* Location.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,7 @@
 		4CBDF63D2BA75AD600F2885F /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		4CBDF6402BA75B1400F2885F /* CombinedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CombinedView.swift; sourceTree = "<group>"; };
 		4CBDF6432BA75B4900F2885F /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		4CBDF6452BA838CD00F2885F /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +88,7 @@
 			isa = PBXGroup;
 			children = (
 				4CBDF6262BA7505000F2885F /* Item.swift */,
+				4CBDF6452BA838CD00F2885F /* Location.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -223,6 +226,7 @@
 				4CBDF6412BA75B1400F2885F /* CombinedView.swift in Sources */,
 				4CBDF6442BA75B4900F2885F /* SettingsView.swift in Sources */,
 				4CBDF63E2BA75AD600F2885F /* MapView.swift in Sources */,
+				4CBDF6462BA838CD00F2885F /* Location.swift in Sources */,
 				4CBDF63B2BA759B800F2885F /* WeekView.swift in Sources */,
 				4CBDF6372BA7596700F2885F /* PersonView.swift in Sources */,
 				4CBDF6272BA7505000F2885F /* Item.swift in Sources */,
