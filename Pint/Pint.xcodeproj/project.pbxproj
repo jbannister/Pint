@@ -18,6 +18,7 @@
 		4CBDF6442BA75B4900F2885F /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CBDF6432BA75B4900F2885F /* SettingsView.swift */; };
 		4CBDF6462BA838CD00F2885F /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CBDF6452BA838CD00F2885F /* Location.swift */; };
 		4CBDF64A2BA854B800F2885F /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CBDF6492BA854B800F2885F /* Person.swift */; };
+		4CBDF64D2BA85DB800F2885F /* REST.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CBDF64C2BA85DB800F2885F /* REST.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +34,7 @@
 		4CBDF6432BA75B4900F2885F /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		4CBDF6452BA838CD00F2885F /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
 		4CBDF6492BA854B800F2885F /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		4CBDF64C2BA85DB800F2885F /* REST.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = REST.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +70,7 @@
 				4CBDF6222BA7505000F2885F /* PintApp.swift */,
 				4CBDF6242BA7505000F2885F /* ContentView.swift */,
 				4CBDF6322BA7587200F2885F /* Model */,
+				4CBDF64B2BA85DA200F2885F /* REST */,
 				4CBDF6332BA758D900F2885F /* Nav */,
 				4CBDF6342BA758FC00F2885F /* View */,
 				4CBDF6282BA7505100F2885F /* Assets.xcassets */,
@@ -152,6 +155,14 @@
 			path = Settings;
 			sourceTree = "<group>";
 		};
+		4CBDF64B2BA85DA200F2885F /* REST */ = {
+			isa = PBXGroup;
+			children = (
+				4CBDF64C2BA85DB800F2885F /* REST.swift */,
+			);
+			path = REST;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -225,6 +236,7 @@
 				4CBDF6252BA7505000F2885F /* ContentView.swift in Sources */,
 				4CBDF6412BA75B1400F2885F /* CombinedView.swift in Sources */,
 				4CBDF6442BA75B4900F2885F /* SettingsView.swift in Sources */,
+				4CBDF64D2BA85DB800F2885F /* REST.swift in Sources */,
 				4CBDF63E2BA75AD600F2885F /* MapView.swift in Sources */,
 				4CBDF6462BA838CD00F2885F /* Location.swift in Sources */,
 				4CBDF63B2BA759B800F2885F /* WeekView.swift in Sources */,
