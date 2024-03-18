@@ -8,18 +8,20 @@
 import SwiftUI
 
 struct PersonView: View {
-    @Environment(\.modelContext) private var modelContext
-    @State var items = [Item]()
-    
-    
+    @State var persons = [Person(name: "Jan Bannoster"),
+                          Person(name: "MC"),
+                          Person(name: "Shane Donnelly"),
+                          Person(name: "Colin O'Sullivan"),
+                          Person(name: "Tall Connaughton")]
+
     var body: some View {
         Form {
             List {
-                ForEach(items) { item in
+                ForEach(persons) { person in
                     NavigationLink {
-                        Text("Item at \(item.timestamp, format: Date.FormatStyle(date: .numeric, time: .standard))")
+                        Text("Item at \(person.name)")
                     } label: {
-                        Text(item.timestamp, format: Date.FormatStyle(date: .numeric, time: .standard))
+                        Text(person.name)
                     }
                 }
                 .onDelete(perform: deleteItems)
@@ -29,25 +31,25 @@ struct PersonView: View {
                     EditButton()
                 }
                 ToolbarItem {
-                    Button(action: addItem) {
-                        Label("Add Item", systemImage: "plus")
+                    Button(action: addPerson) {
+                        Label("Add Person", systemImage: "plus")
                     }
                 }
             }
         }
     }
     
-    private func addItem() {
+    private func addPerson() {
         withAnimation {
-            let newItem = Item(timestamp: Date())
-            modelContext.insert(newItem)
+            let newPerson = Person(name: "Anon")
+            persons.append(newPerson)
         }
     }
 
     private func deleteItems(offsets: IndexSet) {
         withAnimation {
             for index in offsets {
-                modelContext.delete(items[index])
+                // persons[index] // Delete
             }
         }
     }
