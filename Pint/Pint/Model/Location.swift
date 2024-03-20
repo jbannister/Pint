@@ -10,13 +10,11 @@ import MapKit
 
 class Location: Identifiable {
     let id = UUID()
-    let name: String
-    let address: String
+    let location: String
     let coordinate: CLLocationCoordinate2D
     
-    init(name: String, address: String, coordinate: CLLocationCoordinate2D ) {
-        self.name = name
-        self.address = address
+    init(location: String, coordinate: CLLocationCoordinate2D ) {
+        self.location = location
         self.coordinate = coordinate
     }
 }
