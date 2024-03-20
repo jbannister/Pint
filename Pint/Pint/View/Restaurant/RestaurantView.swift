@@ -8,11 +8,15 @@
 import SwiftUI
 
 struct RestaurantView: View {
+    @State var restaurant: Restaurant
     var body: some View {
-        Text("Restaurant View")
+        VStack {
+            Text(restaurant.name)
+            Text(restaurant.address)
+        }
     }
 }
 
 #Preview {
-    RestaurantView()
+    RestaurantView(restaurant: Restaurant.example[0])
 }

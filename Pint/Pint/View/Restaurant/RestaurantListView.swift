@@ -8,14 +8,11 @@
 import SwiftUI
 
 struct RestaurantListView: View {
-    @State private var restaurants = [Restaurant]()
+    @State private var restaurants = Restaurant.example
     var body: some View {
-        
         ForEach(restaurants) { restaurant in
-            Text(restaurant.name)
+            RestaurantView(restaurant: restaurant)
         }
-        
-        Text("Restaurant List")
     }
 }
 
