@@ -10,47 +10,19 @@ import MapKit
 
 struct PersonView: View {
     
-    @State var persons = [
-        Person(name: "Jan",
-                 address: "49 King George, Richmond",
-                 coordinate:
-                    CLLocationCoordinate2D(latitude: 51.453630,
-                                           longitude: -0.290940)),
-        Person(name: "MC",
-                 address: "Church Road, Richmond",
-                 coordinate: CLLocationCoordinate2D(latitude: 51.460864,
-                                                    longitude: -0.297149)),
-        
-        Person(name: "Shane Donnelly",
-                 address: "New Road, Reading",
-                 coordinate: CLLocationCoordinate2D(latitude: 51.443950,
-                                                    longitude: -0.952680)),
-        
-        Person(name: "Colin O'Sullivan",
-                 address: "West Norwood, London",
-                 coordinate: CLLocationCoordinate2D(latitude: 51.43462818592707,
-                                                    longitude: -0.10384535281600316)),
-        
-        Person(name: "Tall Connaughton",
-                 address: "Folgate Street, London",
-                 coordinate: CLLocationCoordinate2D(latitude: 51.52080696041292,
-                                                    longitude: -0.07618033285277254))
-        
-        
-    ]
+    @State var persons = Person.example
 
     var body: some View {
-        Form {
-            List {
+        NavigationView {
+            Form {
                 ForEach(persons) { person in
-                    NavigationLink {
-                        Text("Item at \(person.name)")
-                    } label: {
+                    NavigationLink(destination: Text("Item at \(person.name)")) {
                         Text(person.name)
                     }
                 }
                 .onDelete(perform: deleteItems)
             }
+            .navigationBarTitle("Persons", displayMode: .large)
             .toolbar {
                 ToolbarItem(placement: .navigationBarTrailing) {
                     EditButton()
