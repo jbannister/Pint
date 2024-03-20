@@ -1,5 +1,5 @@
 //
-//  ContentView.swift
+//  NavView.swift
 //  Pint
 //
 //  Created by Jan Bannister on 17/03/2024.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct NavView: View {
     
     var body: some View {
         TabView {
@@ -16,9 +16,9 @@ struct ContentView: View {
                     Label("Person", systemImage: "person.fill")
                 }
             
-            WeekView()
+            RestaurantListView()
                 .tabItem {
-                    Label("Week", systemImage: "calendar")
+                    Label("Restaurant", systemImage: "fork.knife")
                 }
             
             MapView()
@@ -26,9 +26,9 @@ struct ContentView: View {
                     Label("Map", systemImage: "map.fill")
                 }
             
-            CombinedView()
+            WeekView()
                 .tabItem {
-                    Label("Combined", systemImage: "person.3.fill")
+                    Label("Week", systemImage: "calendar")
                 }
             
             SettingsView()
@@ -40,5 +40,5 @@ struct ContentView: View {
 }
 
 #Preview {
-    ContentView()
+    NavView()
 }

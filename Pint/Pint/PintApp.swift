@@ -12,7 +12,7 @@ struct PintApp: App {
 
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            NavView()
         }
 
     }
