@@ -35,6 +35,8 @@ struct ContentView: View {
                 .tabItem {
                     Label("Settings", systemImage: "gear")
                 }
+        }.task {
+            rest_test()
         }
     }
 }
