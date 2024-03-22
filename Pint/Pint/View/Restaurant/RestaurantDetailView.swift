@@ -13,8 +13,14 @@ struct RestaurantDetailView: View {
     var body: some View {
         VStack(alignment: .leading) {
             Text(restaurant.name)
-            Map(initialPosition: restaurant.cameraPosition)
-                .frame(width: 200, height: 100) 
+            
+            GeometryReader { geometry in
+                Map(initialPosition: restaurant.cameraPosition) {
+                    Marker(restaurant.name, coordinate: restaurant.coordinate)
+                }
+                .frame(width: geometry.size.width * 0.9, height: 300) // 90% of parent's width
+            }
+            .frame(height: 300)
         }
     }
 }
