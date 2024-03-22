@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import SwiftUI
 import MapKit
 
 class Restaurant: Identifiable {
@@ -14,11 +15,15 @@ class Restaurant: Identifiable {
     let name: String
     let address: String
     let coordinate: CLLocationCoordinate2D
+    let cameraPosition: MapCameraPosition
     
     init(name: String, address: String, coordinate: CLLocationCoordinate2D ) {
         self.name = name
         self.address = address
         self.coordinate = coordinate
+        self.cameraPosition = MapCameraPosition.region(
+            MKCoordinateRegion(center: self.coordinate,
+                               span: MKCoordinateSpan(latitudeDelta: 0.01, longitudeDelta: 0.01)))
     }
     
     static let example = [

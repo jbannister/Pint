@@ -16,7 +16,7 @@ struct RestaurantListView: View {
             Form {
                 ForEach(restaurants) { restaurant in
                     NavigationLink(destination: RestaurantView(restaurant: restaurant)) {
-                        Text(restaurant.name)
+                        RestaurantDetailView(restaurant: restaurant)
                     }
                 }
                 .onDelete(perform: deleteRestaurants)
