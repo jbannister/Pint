@@ -21,6 +21,21 @@ class Person: Identifiable {
         self.coordinate = coordinate
     }
     
+    var region: MKCoordinateRegion {
+        MKCoordinateRegion(center: coordinate,
+                           latitudinalMeters: 1000,
+                           longitudinalMeters: 1000)
+    }
+    
+    var placemark: MKPlacemark {
+        //ToDo: CNPostalAddress
+        MKPlacemark(coordinate: coordinate)
+    }
+    
+    var mapItem: MKMapItem {
+        MKMapItem(placemark: placemark)
+    }
+    
     static let example = [
        Person(name: "Jan",
                 address: "49 King George, Richmond",
