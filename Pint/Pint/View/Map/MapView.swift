@@ -16,6 +16,9 @@ struct MapView: View {
     @State private var searchText = ""
     @State private var results = [MKMapItem]()
     
+    @State private var mapSelection: MKMapItem?
+    @State private var showDetails = false
+    
     var persons = [
         Person(name: "Jan",
                address: "49 King George, Richmond",
@@ -47,13 +50,13 @@ struct MapView: View {
     
     var body: some View {
                     
-        Map(position: $cameraPosition) {
+        Map(position: $cameraPosition, selection: $mapSelection) {
             ForEach(persons) { person in
                 Marker(person.name, coordinate: person.coordinate)
             }
             
             ForEach(results, id: \.self) { result in
-                Marker(result.name ?? "Anon", coordinate: result.placemark.coordinate)
+                Marker(result.placemark.name ?? "Anon", coordinate: result.placemark.coordinate)
                     .tint(.blue)
             }
         }
@@ -69,6 +72,15 @@ struct MapView: View {
             // on return? 
             Task { await searchPlaces() }
         }
+        .onChange(of: mapSelection, { oldValue, newValue in
+            showDetails = newValue != nil
+        })
+        .sheet(isPresented: $showDetails) {
+            LocationDetailView(mapSelection: $mapSelection, show: $showDetails)
+                .presentationDetents([.height(340)])
+                .presentationBackgroundInteraction(.enabled(upThrough: .height(340)))
+                .presentationCornerRadius(12)
+        }
         .mapControls{
             MapCompass()
             MapPitchToggle()
@@ -77,6 +89,7 @@ struct MapView: View {
         .task {
             fetchRoute()
         }
+
     }
     
     var routePolyline: MKPolyline? {

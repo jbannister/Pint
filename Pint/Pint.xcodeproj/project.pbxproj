@@ -21,6 +21,7 @@
 		4CBDF6522BAAE66E00F2885F /* RestaurantListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CBDF6512BAAE66E00F2885F /* RestaurantListView.swift */; };
 		4CBDF6542BAAE6D500F2885F /* Restaurant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CBDF6532BAAE6D500F2885F /* Restaurant.swift */; };
 		4CBDF6562BAD8FE800F2885F /* RestaurantDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CBDF6552BAD8FE800F2885F /* RestaurantDetailView.swift */; };
+		4CBDF6582BB2CA4B00F2885F /* LocationDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CBDF6572BB2CA4B00F2885F /* LocationDetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +40,7 @@
 		4CBDF6512BAAE66E00F2885F /* RestaurantListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantListView.swift; sourceTree = "<group>"; };
 		4CBDF6532BAAE6D500F2885F /* Restaurant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Restaurant.swift; sourceTree = "<group>"; };
 		4CBDF6552BAD8FE800F2885F /* RestaurantDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantDetailView.swift; sourceTree = "<group>"; };
+		4CBDF6572BB2CA4B00F2885F /* LocationDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationDetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -139,6 +141,7 @@
 			isa = PBXGroup;
 			children = (
 				4CBDF63D2BA75AD600F2885F /* MapView.swift */,
+				4CBDF6572BB2CA4B00F2885F /* LocationDetailView.swift */,
 			);
 			path = Map;
 			sourceTree = "<group>";
@@ -241,6 +244,7 @@
 				4CBDF6502BAAE61300F2885F /* RestaurantView.swift in Sources */,
 				4CBDF6562BAD8FE800F2885F /* RestaurantDetailView.swift in Sources */,
 				4CBDF64A2BA854B800F2885F /* Person.swift in Sources */,
+				4CBDF6582BB2CA4B00F2885F /* LocationDetailView.swift in Sources */,
 				4CBDF6372BA7596700F2885F /* PersonView.swift in Sources */,
 				4CBDF6232BA7505000F2885F /* PintApp.swift in Sources */,
 			);
