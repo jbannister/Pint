@@ -12,6 +12,7 @@ struct LocationDetailView: View {
     @Binding var mapSelection: MKMapItem?
     @Binding var show: Bool
     @State private var lookAroundScene: MKLookAroundScene?
+    @Binding var getDirections: Bool
     
     var body: some View {
         VStack {
@@ -50,6 +51,34 @@ struct LocationDetailView: View {
                 ContentUnavailableView("No preview available", systemImage: "eye.slash")
             }
             
+            HStack(spacing: 24) {
+                Button {
+                    if let mapSelection {
+                        mapSelection.openInMaps()
+                    }
+                } label: {
+                    Text ("Open in Maps")
+                        .font(.headline)
+                        .foregroundColor(.white)
+                        .frame(width: 170, height: 48)
+                        .background(.green)
+                        .cornerRadius(12)
+                }
+                
+                Button {
+                    getDirections = true
+                    show = false
+                    
+                } label: {
+                    Text ("Get Directions")
+                        .font(.headline)
+                        .foregroundColor(.white)
+                        .frame(width: 170, height: 48)
+                        .background(.blue)
+                        .cornerRadius (12)
+                }
+                .padding(.horizontal)
+            }
         }
         .onAppear {
             fetchLookAroundPreview()
@@ -57,7 +86,7 @@ struct LocationDetailView: View {
         .onChange(of: mapSelection) { oldValue, newValue in
             fetchLookAroundPreview()
         }
-        .padding()
+        
     }
     
     func fetchLookAroundPreview() {
@@ -73,5 +102,5 @@ struct LocationDetailView: View {
 }
                           
 #Preview {
-    LocationDetailView(mapSelection: .constant(nil), show: .constant(false))
+    LocationDetailView(mapSelection: .constant(nil), show: .constant(false), getDirections: .constant(false))
 }
