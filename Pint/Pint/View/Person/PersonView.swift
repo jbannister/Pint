@@ -16,7 +16,7 @@ struct PersonView: View {
         NavigationView {
             Form {
                 ForEach(persons) { person in
-                    NavigationLink(destination: Text("Item at \(person.name)")) {
+                    NavigationLink(destination: PersonDetailView(person: person)) {
                         Text(person.name)
                     }
                 }
