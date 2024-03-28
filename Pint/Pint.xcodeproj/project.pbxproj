@@ -23,6 +23,7 @@
 		4CBDF6562BAD8FE800F2885F /* RestaurantDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CBDF6552BAD8FE800F2885F /* RestaurantDetailView.swift */; };
 		4CBDF6582BB2CA4B00F2885F /* LocationDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CBDF6572BB2CA4B00F2885F /* LocationDetailView.swift */; };
 		4CBDF65A2BB425D200F2885F /* PersonDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CBDF6592BB425D200F2885F /* PersonDetailView.swift */; };
+		4CFEA7952BB46EB500101A46 /* RestaurantWeeksView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CFEA7942BB46EB500101A46 /* RestaurantWeeksView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,6 +44,7 @@
 		4CBDF6552BAD8FE800F2885F /* RestaurantDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantDetailView.swift; sourceTree = "<group>"; };
 		4CBDF6572BB2CA4B00F2885F /* LocationDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationDetailView.swift; sourceTree = "<group>"; };
 		4CBDF6592BB425D200F2885F /* PersonDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonDetailView.swift; sourceTree = "<group>"; };
+		4CFEA7942BB46EB500101A46 /* RestaurantWeeksView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantWeeksView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -163,6 +165,7 @@
 				4CBDF64F2BAAE61300F2885F /* RestaurantView.swift */,
 				4CBDF6512BAAE66E00F2885F /* RestaurantListView.swift */,
 				4CBDF6552BAD8FE800F2885F /* RestaurantDetailView.swift */,
+				4CFEA7942BB46EB500101A46 /* RestaurantWeeksView.swift */,
 			);
 			path = Restaurant;
 			sourceTree = "<group>";
@@ -246,6 +249,7 @@
 				4CBDF63B2BA759B800F2885F /* WeekView.swift in Sources */,
 				4CBDF6502BAAE61300F2885F /* RestaurantView.swift in Sources */,
 				4CBDF6562BAD8FE800F2885F /* RestaurantDetailView.swift in Sources */,
+				4CFEA7952BB46EB500101A46 /* RestaurantWeeksView.swift in Sources */,
 				4CBDF64A2BA854B800F2885F /* Person.swift in Sources */,
 				4CBDF6582BB2CA4B00F2885F /* LocationDetailView.swift in Sources */,
 				4CBDF6372BA7596700F2885F /* PersonView.swift in Sources */,

@@ -36,7 +36,7 @@ class Person: Identifiable {
         MKMapItem(placemark: placemark)
     }
         
-    static let example = [
+    static var example = [
        Person(name: "Jan",
                 address: "49 King George, Richmond",
                 coordinate:

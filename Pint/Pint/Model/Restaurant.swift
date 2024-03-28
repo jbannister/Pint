@@ -26,7 +26,7 @@ class Restaurant: Identifiable {
                                span: MKCoordinateSpan(latitudeDelta: 0.01, longitudeDelta: 0.01)))
     }
     
-    static let example = [
+    static var example = [
         Restaurant(name: "Stein's Richmond",
                    address: "Towpath, Petersham Rd, Richmond TW10 6UX",
                    coordinate: CLLocationCoordinate2D(latitude: 51.455589315498806,

@@ -14,13 +14,9 @@ struct RestaurantDetailView: View {
         VStack(alignment: .leading) {
             Text(restaurant.name)
             
-            GeometryReader { geometry in
-                Map(initialPosition: restaurant.cameraPosition) {
-                    Marker(restaurant.name, coordinate: restaurant.coordinate)
-                }
-                .frame(width: geometry.size.width * 0.9, height: 300) // 90% of parent's width
+            VStack {
+                RestaurantWeeksView(restaurant: restaurant)
             }
-            .frame(height: 300)
         }
     }
 }
