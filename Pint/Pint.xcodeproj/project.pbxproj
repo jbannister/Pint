@@ -24,6 +24,8 @@
 		4CBDF6582BB2CA4B00F2885F /* LocationDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CBDF6572BB2CA4B00F2885F /* LocationDetailView.swift */; };
 		4CBDF65A2BB425D200F2885F /* PersonDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CBDF6592BB425D200F2885F /* PersonDetailView.swift */; };
 		4CFEA7952BB46EB500101A46 /* RestaurantWeeksView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CFEA7942BB46EB500101A46 /* RestaurantWeeksView.swift */; };
+		4CFEA7982BB5722400101A46 /* ChatMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CFEA7972BB5722400101A46 /* ChatMessage.swift */; };
+		4CFEA79A2BB5795800101A46 /* REST.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CFEA7992BB5795800101A46 /* REST.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -45,6 +47,8 @@
 		4CBDF6572BB2CA4B00F2885F /* LocationDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationDetailView.swift; sourceTree = "<group>"; };
 		4CBDF6592BB425D200F2885F /* PersonDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonDetailView.swift; sourceTree = "<group>"; };
 		4CFEA7942BB46EB500101A46 /* RestaurantWeeksView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantWeeksView.swift; sourceTree = "<group>"; };
+		4CFEA7972BB5722400101A46 /* ChatMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatMessage.swift; sourceTree = "<group>"; };
+		4CFEA7992BB5795800101A46 /* REST.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = REST.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +105,7 @@
 				4CBDF6452BA838CD00F2885F /* Location.swift */,
 				4CBDF6492BA854B800F2885F /* Person.swift */,
 				4CBDF6532BAAE6D500F2885F /* Restaurant.swift */,
+				4CFEA7972BB5722400101A46 /* ChatMessage.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -120,6 +125,7 @@
 				4CBDF64E2BAAE5A000F2885F /* Restaurant */,
 				4CBDF63C2BA75ABE00F2885F /* Map */,
 				4CBDF6382BA7597E00F2885F /* Week */,
+				4CFEA7962BB571DE00101A46 /* Chat */,
 				4CBDF6422BA75B3600F2885F /* Settings */,
 			);
 			path = View;
@@ -168,6 +174,14 @@
 				4CFEA7942BB46EB500101A46 /* RestaurantWeeksView.swift */,
 			);
 			path = Restaurant;
+			sourceTree = "<group>";
+		};
+		4CFEA7962BB571DE00101A46 /* Chat */ = {
+			isa = PBXGroup;
+			children = (
+				4CFEA7992BB5795800101A46 /* REST.swift */,
+			);
+			path = Chat;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -241,6 +255,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4CBDF6542BAAE6D500F2885F /* Restaurant.swift in Sources */,
+				4CFEA7982BB5722400101A46 /* ChatMessage.swift in Sources */,
 				4CBDF6252BA7505000F2885F /* NavView.swift in Sources */,
 				4CBDF6442BA75B4900F2885F /* SettingsView.swift in Sources */,
 				4CBDF63E2BA75AD600F2885F /* MapView.swift in Sources */,
@@ -249,6 +264,7 @@
 				4CBDF63B2BA759B800F2885F /* WeekView.swift in Sources */,
 				4CBDF6502BAAE61300F2885F /* RestaurantView.swift in Sources */,
 				4CBDF6562BAD8FE800F2885F /* RestaurantDetailView.swift in Sources */,
+				4CFEA79A2BB5795800101A46 /* REST.swift in Sources */,
 				4CFEA7952BB46EB500101A46 /* RestaurantWeeksView.swift in Sources */,
 				4CBDF64A2BA854B800F2885F /* Person.swift in Sources */,
 				4CBDF6582BB2CA4B00F2885F /* LocationDetailView.swift in Sources */,
